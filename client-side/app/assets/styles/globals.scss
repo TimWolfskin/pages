@@ -1,16 +1,38 @@
 @import 'app/assets/styles/variables';
 
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@400;600;700&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-	@apply text-base text-black;
+	@apply text-base tracking-wider text-gray;
+	font-family: 'Cardo', serif;
 }
+
+.container {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 
 .disabled {
 	pointer-events: none;
 	cursor: default;
 	text-decoration: none;
 	opacity: 0.2 !important;
+}
+
+.logo {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 58px;
+	display: block;
+	color: #F5F8FC;
+	letter-spacing: 0.05em;
 }

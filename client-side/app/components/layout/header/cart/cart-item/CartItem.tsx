@@ -7,6 +7,7 @@ import { formatToCurrency } from '@/utils/format-to-currency'
 
 import styles from '../Cart.module.scss'
 
+
 import { ICartItem } from '@/types/cart.interface'
 
 const CartItem: FC<{ item: ICartItem }> = ({ item }) => {
